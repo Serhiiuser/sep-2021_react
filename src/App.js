@@ -1,9 +1,17 @@
 
 import './App.css';
+import Flights from "./components/Flights";
+
 
 function App() {
+
+
   return (
-      <div></div>
+      <div>
+
+<Flights/>
+
+      </div>
 
   );
 }
