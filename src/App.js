@@ -33,8 +33,7 @@ function App() {
     }
 
   return (
-      <div>
-
+      <div >
         <Form getFilter={getFilter}/>
         <Users users={filteredUsers}/>
       </div>
