@@ -1,10 +1,11 @@
 import {useState} from "react";
 
-function Form() {
+function Form(getFilter) {
     const [form,setForm] = useState({name:'',username:'',email:''});
     const formHandler= (e)=>{
       const eventData= {...form,[e.target.name]:e.target.value}
         setForm({...form,...eventData})
+        getFilter(eventData)
     }
 
   return (
