@@ -1,7 +1,7 @@
 import {axiosService} from "./axios.service";
 import {urls} from "../config/urls";
 
-export const userService = {
+export const commentsService = {
     getAll:()=>axiosService.get(urls.users).then(value =>value.data),
-    // getById:()=> axiosService.get(`${urls.users}${id}`).then(value => value.data)
+    getById:()=> axiosService.get(`${urls.posts}/${postid}/comments`).then(value => value.data)
 }

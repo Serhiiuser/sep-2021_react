@@ -4,10 +4,8 @@ import {
     AlbumsPage, PhotosPage,
     PostCommentsPage,
     PostDetailsPage,
-    PostsPage,
-    UserDetailPage,
+    PostsPage, UserDetailsPage, UserPage,
     UserPostsPage,
-    UsersPage
 } from "./pages";
 
 
@@ -18,8 +16,8 @@ function App() {
        <Route path={'/'} element={<Layout/>}>
             <Route index element={<Navigate to={'users'}/>}/>
 
-           <Route path={'users'} element={<UsersPage/>}>
-               <Route path={':id'} element={<UserDetailPage/>}>
+           <Route path={'users'} element={<UserPage/>}>
+               <Route path={':id'} element={<UserDetailsPage/>}>
                    <Route path={'posts'} element={<UserPostsPage/>}/>
                </Route>
 
