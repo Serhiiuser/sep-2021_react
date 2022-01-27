@@ -1,12 +1,13 @@
 import {Outlet} from "react-router-dom";
 
+const UserPage = ({item:id,name})=> {
 
-const UserDetailsPage = ({item:{name}})=> {
     return (
         <div>
-            {name}
+            {id}-{name}
             <Outlet/>
         </div>
     );
 }
-export {UserDetailsPage}
+
+export {UserPage} ;

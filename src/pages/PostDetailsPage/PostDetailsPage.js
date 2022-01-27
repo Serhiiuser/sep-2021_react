@@ -1,9 +1,9 @@
 import {Outlet} from "react-router-dom";
 
-const PostDetailsPage = ()=> {
+const PostDetailsPage = ({item:title})=> {
   return (
     <div>
-    PostDetailsPage
+      {title}
       <Outlet/>
     </div>
   );
