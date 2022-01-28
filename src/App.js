@@ -1,5 +1,6 @@
 import {Routes, Route,Link} from "react-router-dom"
 
+
 import {
     AlbumsPage, PhotosPage,
     PostCommentsPage,
@@ -24,9 +25,12 @@ function App() {
        <Routes>
                <Route path={'/'} element={<HomePage/>}/>
                <Route path={'/layout'} element={<Layout/>}>
-                       <Route path={'/layout/users'} element={<UsersPage/>}/>
-                       <Route path={'/layout/posts'} element={<PostsPage/>}/>
+                   <Route path={'/layout/users'} element={<UsersPage/>}/>
+                   <Route path={'/layout/posts'} element={<PostsPage/>}/>
                </Route>
+
+
+
 
 
                {/*    <Route path={':id/albums'} element={<AlbumsPage/>}>*/}

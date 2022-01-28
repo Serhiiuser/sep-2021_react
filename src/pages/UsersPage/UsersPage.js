@@ -12,12 +12,14 @@ const UsersPage = ()=> {
     useEffect(()=>{
         userService.getAll().then(value =>
             setUsers([...value]))
-    },[])
+    },[]);
     console.log(users)
 
     return (
         <div>
-            {users.map(value=> <UserPage key={value.id} item={value}/>)}
+            {
+                users.map(value => <UserPage key={value.id} item={value} />)
+            }
 
             <Outlet/>
         </div>

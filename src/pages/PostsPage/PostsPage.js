@@ -9,7 +9,7 @@ const PostsPage = ()=> {
   const [posts,setPosts]=useState([]);
 
   useEffect(()=>{
-    postService.getAll().then(value =>setPosts(value))
+    postService.getAll().then(value =>setPosts([...value]))
   },[])
   console.log(posts)
 

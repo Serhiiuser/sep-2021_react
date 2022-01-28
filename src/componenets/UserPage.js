@@ -1,13 +1,17 @@
-import {Outlet} from "react-router-dom";
+import {Link, Outlet} from "react-router-dom";
+import React from "react";
 
-const UserPage = ({item:id,name})=> {
+const UserPage = ({item})=> {
+    let {name,id} = item;
 
     return (
         <div>
             {id}-{name}
-            <Outlet/>
+
         </div>
     );
 }
 
 export {UserPage} ;
+
+{/*{id}-{name} <Link to={'/layout/users/'+ id}>details</Link>*/}

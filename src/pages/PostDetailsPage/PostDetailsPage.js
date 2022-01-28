@@ -4,6 +4,7 @@ const PostDetailsPage = ({item:title})=> {
   return (
     <div>
       {title}
+
       <Outlet/>
     </div>
   );
