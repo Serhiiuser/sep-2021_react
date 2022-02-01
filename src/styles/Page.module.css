@@ -1,0 +1,9 @@
+.layout li {
+    display: flex;
+    justify-content: center;
+    background: olive;
+}
+
+.details{
+    background: antiquewhite;
+}

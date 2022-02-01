@@ -10,10 +10,9 @@ const UsersPage = ()=> {
     const [users,setUsers]=useState([]);
 
     useEffect(()=>{
-        userService.getAll().then(value =>
-            setUsers([...value]))
+        userService.getAll().then(value =>setUsers([...value]));
     },[]);
-    console.log(users)
+    console.log(users);
 
     return (
         <div>

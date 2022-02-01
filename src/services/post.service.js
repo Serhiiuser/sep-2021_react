@@ -6,3 +6,5 @@ export const postService = {
     getById: (id) => axiosService.get(`${urls.posts}/${id}/posts`).then(value => value.data)
 }
 
+
+

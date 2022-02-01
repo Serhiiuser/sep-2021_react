@@ -9,3 +9,5 @@ export * from './UsersPage/UsersPage';
 export * from '../componenets/UserPage';
 export * from './Home/Home'
 export * from './Layout/Layout'
+export * from '../componenets/PostPage'
+export * from '../componenets/CommentsPage'

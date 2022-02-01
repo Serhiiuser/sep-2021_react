@@ -6,7 +6,7 @@ import {
     PostCommentsPage,
     PostDetailsPage,
     PostsPage,UserDetailsPage,UsersPage,UserPage,
-    UserPostsPage,HomePage,Layout
+    UserPostsPage,HomePage,Layout,CommentsDetails
 } from "./pages";
 
 
@@ -25,8 +25,13 @@ function App() {
        <Routes>
                <Route path={'/'} element={<HomePage/>}/>
                <Route path={'/layout'} element={<Layout/>}>
-                   <Route path={'/layout/users'} element={<UsersPage/>}/>
-                   <Route path={'/layout/posts'} element={<PostsPage/>}/>
+                   <Route path={'/layout/users'} element={<UsersPage/>}>
+                       <Route path={'/layout/users/:id'} element={<UserDetailsPage/>}/>
+                       <Route path={'/layout/users/:id/posts'} element={<UserPostsPage/>}/>
+                   </Route>
+                   <Route path={'/layout/posts'} element={<PostsPage/>}>
+                       <Route path={'/layout/posts/comments'} element={<PostsPage/>}/>
+               </Route>
                </Route>
 
 
